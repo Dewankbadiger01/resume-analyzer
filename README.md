@@ -69,7 +69,7 @@ http://127.0.0.1:5000/
 
 ---
 
-## 📸 How It Works
+##  How It Works
 
 1. Upload your resume (PDF)
 2. Application extracts text
@@ -82,7 +82,7 @@ http://127.0.0.1:5000/
 
 ---
 
-## 🎯 Example Output
+##  Example Output
 
 * Score: **60%**
 * Skills Found: Python, SQL
@@ -90,7 +90,7 @@ http://127.0.0.1:5000/
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 * Works best with text-based PDFs
 * Keyword-based matching (basic NLP)
