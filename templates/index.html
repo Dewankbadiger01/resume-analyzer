@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartResume Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">Smart<span>Resume</span></h2>
+</nav>
+
+<main>
+    <section class="left-panel">
+        <h1>Decode your <em>resume</em> instantly.</h1>
+        <p>Upload your resume and get instant analysis.</p>
+    </section>
+
+    <section class="right-panel">
+
+        <form action="/analyze" method="post" enctype="multipart/form-data">
+
+            <p>Upload Resume</p>
+
+            <input type="file" name="resume" required>
+
+            <button type="submit">Analyze Resume</button>
+
+        </form>
+
+        <div class="results">
+
+            <h2>Score: {{score}}%</h2>
+
+            <h3>Skills Found:</h3>
+            <ul>
+                {% for s in found %}
+                <li>{{s}}</li>
+                {% endfor %}
+            </ul>
+
+            <h3>Missing Skills:</h3>
+            <ul>
+                {% for s in missing %}
+                <li>{{s}}</li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        
+
+    </section>
+</main>
+
+</body>
+</html>

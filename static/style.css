@@ -1,0 +1,128 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    background: #0f172a;
+    color: #fff;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+/* MAIN LAYOUT */
+main {
+    display: flex;
+    min-height: 90vh;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    width: 50%;
+    padding: 60px;
+}
+
+.left-panel h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.left-panel em {
+    color: #38bdf8;
+}
+
+.tagline {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    width: 50%;
+    padding: 60px;
+    background: #020617;
+}
+
+/* FILE INPUT */
+input[type="file"] {
+    margin: 20px 0;
+    color: #fff;
+}
+
+/* BUTTON */
+button {
+    background: #38bdf8;
+    border: none;
+    padding: 12px 20px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+/* RESULT BOX */
+.results {
+    margin-top: 30px;
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+}
+
+/* SCORE */
+.results h2 {
+    color: #22c55e;
+}
+
+/* LIST */
+ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* ERROR */
+p[style="color:red;"] {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+        padding: 30px;
+    }
+}
